@@ -1,3 +1,7 @@
+[build-system]
+build-backend = "pdm.backend"
+requires = ["pdm-backend"]
+
 [project]
 authors = [
     {name = "Cujoko", email = "cujoko@gmail.com"},
@@ -17,12 +21,17 @@ dependencies = [
     "loguru>=0.6.0",
 ]
 description = "Commons for 1C:Enterprise"
+dynamic = ["version"]
 keywords = ["1c", "commons"]
 license = {text = "MIT"}
 name = "commons-1c"
 readme = "README.md"
 requires-python = ">=3.10"
-version = "3.9.4"
 
 [project.urls]
 repository = "https://github.com/Cujoko-Dev/commons-1c"
+
+[tool.pdm.version]
+path = "src/commons_1c/_version.py"
+pattern = '^__version__\s*=\s*"([^"]+)"'
+source = "file"
