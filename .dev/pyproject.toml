@@ -39,7 +39,7 @@ package-dir = "../src"
 
 [tool.pdm.dev-dependencies]
 dev = [
-    "-e file:///${PROJECT_ROOT}/../../commons#egg=cjk-commons",
+    "-e file:///${PROJECT_ROOT}/../../commons/.dev#egg=cjk-commons",
 ]
 
 [tool.pdm.scripts]
