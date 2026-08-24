@@ -29,7 +29,7 @@ readme = "README.md"
 requires-python = ">=3.10"
 
 [project.urls]
-repository = "https://github.com/Cujoko-Dev/commons-1c"
+repository = "https://github.com/cujoko-dev/commons-1c"
 
 [tool.pdm.version]
 path = "src/commons_1c/_version.py"
