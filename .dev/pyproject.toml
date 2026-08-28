@@ -5,6 +5,7 @@ requires = ["pdm-backend"]
 [dependency-groups]
 dev = [
     "pytest>=9.0.2",
+    "-e file:///${PROJECT_ROOT}/../../commons/.dev#egg=cjk-commons",
 ]
 
 [project]
@@ -36,11 +37,6 @@ repository = "https://github.com/cujoko-dev/commons-1c"
 
 [tool.pdm.build]
 package-dir = "../src"
-
-[tool.pdm.dev-dependencies]
-dev = [
-    "-e file:///${PROJECT_ROOT}/../../commons/.dev#egg=cjk-commons",
-]
 
 [tool.pdm.scripts]
 test = { cmd = "pytest", working_dir = ".." }
